@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="recommend-container">
+
+
+        <!-- AI Recommendations Title & Description -->
+        <h2>AI-Powered Recommendations</h2>
+        <p>Get personalized AI recommendations! Type what you need, and AI will suggest the best options for you.</p>
+
+        <!-- AI Recommendation Input Box -->
+        <div class="recommend-box">
+            <input type="text" id="recommendInput" placeholder="E.g. Best books on AI, Movies to watch"
+                   onkeypress="handleRecommendKeyPress(event)">
+            <button onclick="getRecommendations()">🎯 Recommend</button>
+        </div>
+
+        <!-- AI Recommendation Results Section -->
+        <div id="recommendResultsContainer"></div>
+
+        <!-- Back to Home Button -->
+        <a href="{{ url_for('home') }}" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to AI Web App</h1>
+        <p>Select a feature:</p>
+
+        <!-- Navigation Links to Different AI Features -->
+        <nav>
+            <a href="{{ url_for('chatbot_page') }}">💬 AI Chatbot</a>
+            <a href="{{ url_for('search_page') }}">🔍 AI Search</a>
+            <a href="{{ url_for('recommend_page') }}">🎯 AI Recommendations</a>
+            <a href="{{ url_for('captioning_page') }}">🖼️ Image Captioning</a>
+            <a href="{{ url_for('classification_page') }}">🏷️ Image Classification</a>
+            <a href="{{ url_for('flower_identification_page') }}">🏷️ Flower Species Classification</a>
+        </nav>
+    </div>
+</body>
+</html>

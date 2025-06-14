@@ -1,0 +1,434 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all pages */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+/* Chatbox Styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Chat Page */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+/* Chatbox Styling */
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Styling */
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* User Message (Right) */
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* AI Message (Left) */
+.bot-message {
+    background: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Chat Input */
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.input-container button:hover {
+    background: #0056b3;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .input-container input {
+        font-size: 14px;
+    }
+
+    .input-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Center the search box in the middle of the page */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+
+/* Ai-Search page*/
+
+/* AI Icon Styling */
+/* Center the search box */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* AI Icon */
+.ai-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 15px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background: #0056b3;
+}
+
+/* Google-Style Search Results */
+#searchResultsContainer {
+    width: 60%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.search-result {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-title {
+    font-size: 18px;
+    color: #1a0dab;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search-title:hover {
+    text-decoration: underline;
+}
+
+.search-snippet {
+    font-size: 14px;
+    color: #4d5156;
+}
+
+.search-link {
+    font-size: 12px;
+    color: #006621;
+    text-decoration: none;
+}
+
+/* Center the recommendation box */
+.recommend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* AI Icon */
+.ai-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+/* Recommendation Input Box */
+.recommend-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.recommend-box input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.recommend-box button {
+    padding: 12px 15px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.recommend-box button:hover {
+    background: #0056b3;
+}
+
+/* Recommendation Results */
+#recommendResultsContainer {
+    width: 60%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.recommend-result {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.recommend-title {
+    font-size: 18px;
+    color: #1a0dab;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.recommend-title:hover {
+    text-decoration: underline;
+}
+
+.recommend-snippet {
+    font-size: 14px;
+    color: #4d5156;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#captionResult {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#preview img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+
+

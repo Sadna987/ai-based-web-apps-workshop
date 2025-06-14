@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Classification with MobileNetV2</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Classify</button>
+        <div id="preview">
+            <img id="imagePreview" src="" alt="Image Preview">
+        </div>
+        <div id="results"></div>
+    </div>
+    <a href="{{ url_for('home') }}" class="back-btn">⬅ Back to Home</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
